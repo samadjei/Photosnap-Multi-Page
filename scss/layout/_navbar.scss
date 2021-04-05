@@ -1,0 +1,16 @@
+@import '../abstracts/variables';
+
+.navbar {
+	height: 7.2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: $pureWhite;
+	padding: 0 16rem;
+
+	&__links {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 1.5rem;
+	}
+}

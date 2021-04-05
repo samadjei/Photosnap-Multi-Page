@@ -1,4 +1,7 @@
-@import 'home.scss';
+@import 'layout/navbar.scss';
+@import 'layout/home.scss';
+
+@import "component/button.scss";
 
 *,
 *::after,
@@ -13,22 +16,22 @@
 /* setting the root font-size  */
 html {
 	box-sizing: border-box;
-	/* change to 1px so that we know that 1rem will equal 10px */
-	/* change the 10px to a percentage which will translate to the percentage given by the browser */
-	/* 10/16*100 */
-	/* this method is used when a user decides to adjust the font size on the browser  */
-	font-size: 62.5%;
+	font-size: 66.6%;
 }
 
 body {
-	font-family: 'Poppins', 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-family: 'DM SANS', sans-serif;
+	font-size: 15px;
 	line-height: 1.5;
 }
 
 a {
-	// color: $primary-color;
+	color: $pureBlack;
 	text-decoration: none;
+	text-transform: uppercase;
+	&:hover {
+		color: $lightGrey;
+	}
 }
 
 ul {
@@ -46,4 +49,29 @@ img {
 	max-width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
+}
+
+// TYPOGRAPHY
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 2.4rem;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1.8rem;
+}
+
+h4 {
+	font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: bold;
 }
